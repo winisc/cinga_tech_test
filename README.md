@@ -6,6 +6,29 @@ Este projeto é um motor de propostas baseado em arquivos, construído para proc
 
 Este motor de propostas permite processar grandes volumes de dados financeiros diretamente a partir de arquivos, sem necessidade de banco de dados ou serviços externos. As regras implementadas garantem a correta aplicação de descontos (deságio) conforme tipo de origem e senioridade, filtragem por elegibilidade, além de arredondamento padronizado dos valores.
 
+## 📂 Estrutura do Projeto
+
+```bash
+cinga_tech_test/
+├── data/                      # Arquivos CSV de entrada (ex: casos.csv)
+├── out/                       # Arquivos gerados: metrics.json, propostas.csv, run.log
+├── src/
+│   ├── config/
+│   │   └── settings.py        # Configurações e constantes do projeto
+│   ├── data/
+│   │   ├── file_manager.py    # Leitura e gravação de arquivos CSV e JSON
+│   │   └── validator.py       # Validação e tratamento dos dados
+│   ├── engine/
+│   │   ├── processor.py       # Processamento principal das propostas
+│   │   └── rules.py           # Regras de negócio: deságio, elegibilidade, cálculo de anos
+│   ├── loggers/
+│   │   └── logger.py          # Configuração e controle dos logs
+│   ├── output/
+│   │   ├── generator.py       # Geração de arquivos de saída e métricas
+│   ├── main.py                # Ponto de entrada da aplicação
+├── tests/
+│   └── unit_tests.py          # Testes unitários
+```
 
 ### 📋 Pré-requisitos
 
@@ -21,8 +44,8 @@ Este motor de propostas permite processar grandes volumes de dados financeiros d
 Clone este repositório:
 
 ```bash
-git clone https://github.com/seuusuario/seuprojeto.git
-cd seuprojeto
+git clone git@github.com:winisc/cinga_tech_test.git
+cd cinga_tech_test
 ```
 
 Instale as dependências:
