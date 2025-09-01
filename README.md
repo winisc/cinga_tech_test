@@ -41,8 +41,8 @@ motor_de_propostas/
 Clone este repositório:
 
 ```bash
-git clone git@github.com:winisc/motor_de_proposta.git
-cd motor_de_proposta
+git clone git@github.com:winisc/motor_de_propostas.git
+cd motor_de_propostas
 ```
 
 Instale as dependências:
