@@ -1,4 +1,4 @@
-# Cinga Tech Test — Motor de Propostas
+# Motor de Propostas
 
 Este projeto é um motor de propostas baseado em arquivos, construído para processar dados de propostas com regras de elegibilidade, deságio e arredondamento. O motor lê arquivos CSV, aplica as regras, gera novas propostas elegíveis e salva os resultados em CSV e JSON.
 
@@ -9,7 +9,7 @@ Este motor de propostas permite processar grandes volumes de dados financeiros d
 ## 📂 Estrutura do Projeto
 
 ```bash
-cinga_tech_test/
+motor_de_propostas/
 ├── data/                      # Arquivos CSV de entrada (ex: casos.csv)
 ├── out/                       # Arquivos gerados: metrics.json, propostas.csv, run.log
 ├── src/
@@ -41,8 +41,8 @@ cinga_tech_test/
 Clone este repositório:
 
 ```bash
-git clone git@github.com:winisc/cinga_tech_test.git
-cd cinga_tech_test
+git clone git@github.com:winisc/motor_de_proposta.git
+cd motor_de_proposta
 ```
 
 Instale as dependências:
